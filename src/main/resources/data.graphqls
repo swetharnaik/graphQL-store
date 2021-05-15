@@ -3,7 +3,7 @@ schema {
 }
 
 type Query {
-    getStores: [Store]!
+    stores: [Store]!
 }
 
 type Store {

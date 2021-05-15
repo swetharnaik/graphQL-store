@@ -49,7 +49,7 @@ public class GraphQLService {
     private RuntimeWiring buildWiring() {
         return RuntimeWiring.newRuntimeWiring()
                 .type(newTypeWiring("Query")
-                        .dataFetcher("getStores", graphQLDataFetcher.getStores()))
+                        .dataFetcher("stores", graphQLDataFetcher.getStores()))
                 .type(newTypeWiring("Store")
                         .dataFetcher("products", graphQLDataFetcher.getProductsInStores()))
                 .build();
