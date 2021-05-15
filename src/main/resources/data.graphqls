@@ -1,0 +1,27 @@
+schema {
+    query: Query
+}
+
+type Query {
+    getStores: [Store]!
+}
+
+type Store {
+    id: ID!
+    storeName: String!
+    storeCode: String!
+    storeType: String!
+    pincode: Int!
+    address: String!
+    phoneNo: Int!
+    products: [Product]!
+}
+
+type Product {
+    id: ID!
+    productName: String!
+    productCategory: String!
+    productPrice: Int!
+    productDesc: String!
+}
+
